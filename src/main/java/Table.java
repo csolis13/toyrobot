@@ -32,7 +32,7 @@ public class Table {
         }
     }
 
-    private boolean isRobotPlaced() {
+    public boolean isRobotPlaced() {
         return this.robot != null;
     }
 
@@ -67,5 +67,9 @@ public class Table {
                     this.robot.move(this.robot.getX()-1, this.robot.getY());
                 break;
         }
+    }
+
+    public Robot getRobot() {
+        return this.robot;
     }
 }

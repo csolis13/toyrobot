@@ -23,13 +23,19 @@ A robot that is not on the table can choose to ignore the MOVE, LEFT, RIGHT and 
 The toy robot must not fall off the table during movement. This also includes the initial placement of the toy robot. Any move that would cause hte robot to fall must be ignored.   
 
 ### How to run the program:
-To compile, run below command at the project root directory:
+To compile, run below command on on the Command prompt window at the project root directory:
 
-    `javac src/main/java/Robot.java src/main/java/Table.java src/main/java/Main.java`
+    `javac src\main\java\Robot.java src\main\java\Table.java src\main\java\Main.java`
     
-To execute, run below command at the project root directory:
+To execute, run below command on the Command prompt window at the project root directory:
 
-    `java -cp src/main/java Main`
+    `java -cp src\main\java Main`
+    
+To compile and execute the test, run below commands on the Command prompt window at the project root directory:    
+    
+    `javac -cp lib\junit-4.8.2.jar src\main\java\Robot.java src\main\java\Table.java src\test\java\ToyTest.java`
+  
+    `java -cp lib\junit-4.8.2.jar;src\test\java;src\main\java org.junit.runner.JUnitCore ToyTest`
     
 Example of inputs:
 
